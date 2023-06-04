@@ -1,0 +1,154 @@
+/* Тут будет стилизовать все глобальные блоки */
+
+/* Стилизуем уникальный блок логотипа */
+.logo__image {
+    width: 68px;
+    height: 68px;
+}
+
+@media (max-width: 480px) {
+  .logo__image {
+    width: 30px;
+    height: 30px;
+   }
+}
+
+/* Стилизуем уникальный блок наших контактных  */
+
+.contact {
+    text-align: center;
+  }
+
+.contact__link {
+    font-size: 24px;
+    line-height: 28px;
+    color: #ffffff;
+    transition-duration: 0.6s;
+  }
+
+.contact__callback {
+    font-size: 16px;
+    line-height: 18px;
+    background-color: transparent;
+    color: #ffffff;
+    border: none;
+    font-weight: 400;
+    border-bottom:  1px solid #ffffff;
+    padding-bottom: 3px;
+    transition-duration: 0.6s;
+    padding-left: 2px;
+  }
+
+.contact__link:hover {
+    color:#15A9CB;
+    transition: color 0.4s linear;
+  }
+
+.contact__callback:hover {
+    color: #15A9CB;
+    border-bottom: 1px solid #15A9CB;
+    transition: color 0.4s linear, border 0.4s linear;
+  }
+
+.contact__mobile-icon {
+    display: none;
+  }
+
+@media (max-width: 1024px) {
+    .contact__link {
+      font-size: 21px;
+      line-height: 25px;
+    }
+    .contact__callback {
+      font-size: 13px;
+      line-height: 15px;
+    }
+  }
+@media (max-width: 700px) {
+    .contact__link {
+      font-size: 18px;
+      line-height: 20px;
+    }
+    .contact__callback {
+      font-size: 12px;
+      line-height: 14px;
+    }
+  }
+@media (max-width: 480px) {
+    .container {
+      padding: 0 15px;
+    }
+    .contact__phone,
+    .contact__callback {
+      display: none;
+    }
+    .contact__mobile-icon {
+      display: block;
+      width: 30px;
+      height: 30px;
+    }
+  }
+
+
+/* Стилизуем уникальный блок формы */
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px
+}
+
+.form__input {
+    width: 423px;
+    height: 44px;
+    border: 1px solid #FFFFFF;
+    outline: none;
+    border-radius: 50px;
+    background-color: transparent;
+    font-size: 22px;
+    line-height: 26px;
+    color: rgba(255, 255, 255, 0.5);
+    padding: 21px 25px;
+}
+
+.form__button {
+    min-width: 218px;
+    background: #15A9CB;
+    box-shadow: 0px 4px 25px rgba(21, 169, 203, 0.3);
+    border-radius: 50px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    color: #FFFFFF;
+    padding: 14px 39px;
+    border: none;
+    font-variant: all-small-caps;
+    margin-top: 30px;
+    transition-duration: 0.8s;
+}
+
+.form__button:hover {
+    background-color: #126c81;
+    transition: background-color 0.4s linear;
+}
+
+@media (max-width: 700px) {
+    .form__input {
+    width: 380px;
+    height: 38px;
+  }
+}
+
+@media (max-width: 480px) {
+    .form {
+      gap: 15px;
+    }
+    .form__input {
+      max-width: 290px;
+      max-height: 28px;
+      font-size: 14px;
+      line-height: 16px;
+    }
+}

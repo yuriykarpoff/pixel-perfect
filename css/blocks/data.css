@@ -1,0 +1,112 @@
+.data {
+    background-image: url(../../image/data-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+    position: relative;
+    z-index: 0;
+    display: flex;
+    justify-content: center;
+    padding: 70px 0;
+}
+
+.data:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(47, 50, 75, 0.85);
+    z-index: -1;
+}
+
+.data__title {
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 41px;
+    color: #FFFFFF;
+    margin: 3px 0 17px;
+    padding-left: 124px;
+}
+
+.data__subtitle {
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 26px;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.8);
+    margin: 0 0 51px;
+}
+
+.data__form {
+    margin: 0 0 50px;
+}
+
+.data__text {
+    font-size: 20px;
+    line-height: 23px;
+    color: #FFFFFF;
+}
+
+.data__link {
+    font-size: 20px;
+    line-height: 23px;
+    color: #4A76A8;
+    border-bottom: 1px solid #4A76A8;
+    transition-duration: 0.6s;
+}
+
+.data__link:hover {
+    color: #15A9CB;
+    border-bottom: 1px solid #15A9CB;
+    transition: color 0.4s linear;
+}
+
+@media (max-width: 700px) {
+    .data__text,
+    .data__link {
+        font-size: 16px;
+        line-height: 18px;
+    }
+}
+@media (max-width: 576px) {
+    .data__subtitle {
+        font-size: 16px;
+        line-height: 20px;
+        margin: 0 0 35px;
+    }
+    .data__text,
+    .data__link {
+        font-size: 14px;
+        line-height: 16px;
+    }
+}
+@media (max-width: 480px) {
+    .data__text,
+    .data__link {
+    text-align: center;
+    }
+    .data__title {
+        font-size: 20px;
+        line-height: 23px;
+    }
+    .data__subtitle {
+        font-size: 12px;
+        line-height: 14px;
+        margin: 0 0 35px;
+    }
+}
+@media (max-width: 320px) {
+    .data {
+        padding: 30px 0;
+    }
+    .data__form {
+        margin: 0 0 30px;
+    }
+    .data__text,
+    .data__link {
+        font-size: 11px;
+        line-height: 13px;
+    }
+}

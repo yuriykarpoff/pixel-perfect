@@ -1,0 +1,8 @@
+@import url(fonts.css);
+@import url(normalize.css);
+@import url(global.css);
+@import url(blocks/global_blocks.css);
+@import url(blocks/header.css);
+@import url(blocks/advantage.css);
+@import url(blocks/data.css);
+@import url(blocks/footer.css);
