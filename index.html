@@ -22,17 +22,13 @@
                     </a>
                 </div>
                 <div class="contact">
-                    <div class="contact__phone">
-                        <a class="contact__link" href="tel:79625561234">+7 (962) 556 - 1234</a>
-                    </div>
+                    <a class="contact__link" href="tel:79625561234"><span class="contact__desktop-text">+7 (962) 556 - 1234</span><img class="contact__mobile-icon" src="image/phone.svg" alt="Позвонить нам"></a>
                     <button class="contact__callback">Перезвоните мне</button>
-                    <a class="contact__mobile-icon" href="tel:79625561234"><img src="image/phone.svg" alt="Позвонить нам"></a>
                 </div>
             </div>
             <div class="header__info">
                 <h1 class="header__info-title">Заголовок c уникальным торговым предложение по системе 4U</h1>
-                <p class="header__info-desc">Описания предлжения компании. Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему.</p>
-                <p class="header__mobile-desc">Описания предлжения компании. Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более.</p>
+                <p class="header__info-desc">Описания предлжения компании. Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более <span class="header__mobile-remove">менее осмысленного текста рыбы на русском языке, а начинающему.</span></p>
                 <a class="header__link" href="#">Подробнее</a>
             </div>
         </div>
@@ -72,13 +68,11 @@
                 <h2 class="data__title">Остались вопросы?</h2>
                 <h3 class="data__subtitle">Оставьте номер телефона, и мы перезвоним вам</h3>
                 <form class="form data__form" action="https://jsonplaceholder.typicode.com/posts" method="POST" name="addData">
-
-                    <input class="form__input" type="text" name="name" id="name" title="Введите Ваше имя" required placeholder="Ваше имя">
-
-                    <input class="form__input" type="tel" name="phone" id="phone" title="Введите номер в числовом формате (без плюсов, тире и скобок)" required pattern="^[ 0-9]+$" placeholder="Телефон">
-                
-                    <input class="form__input" type="email" name="email" id="email" title="Введите e-mail в формате example@example.com" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" placeholder="E-mail">
-
+                    <fieldset class="form__fieldset">
+                        <input class="form__input" type="text" name="name" id="name" title="Введите Ваше имя" required placeholder="Ваше имя">
+                        <input class="form__input" type="tel" name="phone" id="phone" title="Введите номер в числовом формате (без плюсов, тире и скобок)" required pattern="^[ 0-9]+$" placeholder="Телефон">
+                        <input class="form__input" type="email" name="email" id="email" title="Введите e-mail в формате example@example.com" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" placeholder="E-mail">
+                    </fieldset>
                     <button class="form__button" type="submit">Позвоните мне</button>
                 </form>
 
@@ -103,20 +97,15 @@
                     </div>
                 </div>       
 
-                <p class="footer__author"><a href="http://ivanov.ru" target="_blank">Сделано Ивановым Иваном</a></p>
+                <p class="footer__author">Сделано Ивановым Иваном</p>
 
                 <div class="contact">
-                    <div class="contact__phone">
-                        <a class="contact__link" href="tel:79625561234">+7 (962) 556 - 1234</a>
-                    </div>
+                    <a class="contact__link contact__link-footer" href="tel:79625561234"><span class="contact__desktop-text">+7 (962) 556 - 1234</span><img class="contact__mobile-icon" src="image/phone.svg" alt="Позвонить нам"></a>
                     <button class="contact__callback">Перезвоните мне</button>
-                    <a class="contact__mobile-icon" href="tel:79625561234"><img src="image/phone.svg" alt="Позвонить нам"></a>
                 </div>
             </div>
         </div>
-        <div class="footer__mobile-author">
-            <a href="http://ivanov.ru" target="_blank">Сделано Ивановым Иваном</a>
-        </div>
+        <div class="footer__mobile-author">Сделано Ивановым Иваном</div>
     </footer>
 </body>
 </html>

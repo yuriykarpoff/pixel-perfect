@@ -1,6 +1,10 @@
 /* Тут будет стилизовать все глобальные блоки */
 
 /* Стилизуем уникальный блок логотипа */
+.logo__link {
+  display: block;
+}
+
 .logo__image {
     width: 68px;
     height: 68px;
@@ -20,29 +24,36 @@
   }
 
 .contact__link {
-    font-size: 24px;
-    line-height: 28px;
-    color: #ffffff;
-    transition-duration: 0.6s;
-  }
-
-.contact__callback {
-    font-size: 16px;
-    line-height: 18px;
-    background-color: transparent;
-    color: #ffffff;
-    border: none;
-    font-weight: 400;
-    border-bottom:  1px solid #ffffff;
-    padding-bottom: 3px;
-    transition-duration: 0.6s;
-    padding-left: 2px;
-  }
+  display: block;
+  font-size: 24px;
+  line-height: 28px;
+  color: #ffffff;
+  transition-duration: 0.6s;
+  margin-bottom: -2px;
+}
 
 .contact__link:hover {
-    color:#15A9CB;
-    transition: color 0.4s linear;
+  color:#15A9CB;
+  transition: color 0.4s linear;
+}
+
+
+/* Допольнительный элемент для отступа в футере */
+.contact__link-footer {
+  margin-bottom: 7px;
+}
+
+.contact__callback {
+  font-size: 16px;
+  line-height: 18px;
+  background-color: transparent;
+  color: #ffffff;
+  border: none;
+  font-weight: 400;
+  border-bottom:  1px solid #ffffff;
+  transition-duration: 0.6s;
   }
+
 
 .contact__callback:hover {
     color: #15A9CB;
@@ -78,7 +89,7 @@
     .container {
       padding: 0 15px;
     }
-    .contact__phone,
+    .contact__desktop-text,
     .contact__callback {
       display: none;
     }
@@ -91,14 +102,6 @@
 
 
 /* Стилизуем уникальный блок формы */
-
-.form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px
-}
-
 .form__input {
     width: 423px;
     height: 44px;
@@ -109,24 +112,34 @@
     font-size: 22px;
     line-height: 26px;
     color: rgba(255, 255, 255, 0.5);
-    padding: 21px 25px;
+    padding: 21px 25px 22px;
+}
+
+.form__fieldset {
+  border: none;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  margin-bottom: 15px;
 }
 
 .form__button {
-    min-width: 218px;
-    background: #15A9CB;
-    box-shadow: 0px 4px 25px rgba(21, 169, 203, 0.3);
-    border-radius: 50px;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 23px;
-    text-align: center;
-    color: #FFFFFF;
-    padding: 14px 39px;
-    border: none;
-    font-variant: all-small-caps;
-    margin-top: 30px;
-    transition-duration: 0.8s;
+  min-width: 218px;
+  background: #15A9CB;
+  box-shadow: 0px 4px 25px rgba(21, 169, 203, 0.3);
+  border-radius: 50px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+  color: #FFFFFF;
+  padding: 14px 39px;
+  border: none;
+  text-transform: lowercase;
+  transition-duration: 0.8s;
+  margin: 0 auto;
+  display: block;
 }
 
 .form__button:hover {
@@ -150,5 +163,11 @@
       max-height: 28px;
       font-size: 14px;
       line-height: 16px;
+    }
+    .form__button {
+      max-width: 174px;
+      font-size: 16px;
+      line-height: 19px;
+      padding: 10px 26px;
     }
 }
